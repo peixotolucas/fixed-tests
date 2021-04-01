@@ -25,5 +25,8 @@ const average = (array) => {
   if (array.length === 0) {
     return undefined;
   }
+  let media = array.reduce((a, b) => a + b) / array.length;
+  return Math.round(media)
 };
 module.exports = average;
+console.log(average([5, 14, 23, 77]))
