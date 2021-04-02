@@ -17,15 +17,14 @@
 */
 
 const vqv = (nome, idade) => {
-  
   if (nome === undefined && idade === undefined) {
-    return undefined
+    return undefined;
   }
   const workMessage = 'trabalho na Trybe e mando muito em programação!\n';
   return `${`Oi, meu nome é ${nome}!\n`
   + `Tenho ${idade} anos,\n`}${
-  workMessage
-}#VQV!`
-}
+    workMessage
+  }#VQV!`;
+};
 
 module.exports = vqv;
