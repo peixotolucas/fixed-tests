@@ -6,7 +6,6 @@ const assert = require('assert');
 const { object } = require('webidl-conversions');
 const circle = require('../src/circle');
 
-
 /*
   Essa função recebe o raio de um círculo e retorna um objeto contendo suas informações (Raio, Área e Circunferência).
   Se não for especificado um raio, a função retorna undefined.
@@ -28,8 +27,7 @@ const circle = require('../src/circle');
 
 describe('#circle', () => {
   it('given a radius, should return an object with circles info', () => {
-    
-    // ESCREVA SEUS TESTES ABAIXO: 
+    // ESCREVA SEUS TESTES ABAIXO:
     assert.strictEqual(typeof circle(1), 'object')
     // Teste se circle retorna um objeto.
     assert.deepStrictEqual((Object.keys(circle(1)).length), 3)
